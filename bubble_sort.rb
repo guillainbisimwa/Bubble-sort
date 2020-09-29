@@ -3,10 +3,10 @@ def bubble_sort(array)
   while j < array.length - 1
     i = 0
     while i < array.length - (j + 1)
-      if array[ i + 1 ] < array[ i ]
+      if array[i + 1] < array[i]
         temp = array[i]
         array[i] = array[i + 1]
-        array[i+1] = temp
+        array[i + 1] = temp
       end
       i += 1
     end
@@ -21,7 +21,7 @@ def bubble_sort_by(array)
     i = 0
     while i < array.length - (j + 1)
       if yield(array[i], array[i + 1]).to_i >= 0
-        array[i], array[i + 1] = array[i + 1], array[i] 
+        array[i], array[i + 1] = array[i + 1], array[i]
       end
       i += 1
     end
@@ -34,6 +34,6 @@ bubble_sort([4, 3, 78, 2, 0, 2])
 
 puts "\n"
 
-bubble_sort_by(["hi", "hello", "hey"]) do |left, right|
+bubble_sort_by(['hi', 'hello', 'hey']) do |left, right|
   left.length - right.length
 end
