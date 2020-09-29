@@ -14,11 +14,32 @@ def bubble_sort(array)
         end
         j += 1
     end
-    return array
+    print array
 end
 
 
-#Bubble sort by
 def bubble_sort_by(array)
+    j = 0
+    while j < array.length - 1
+        i = 0
+        while i < array.length - (j + 1)
+            dif = yield(array[i], array[i+1]).to_i
+            if dif >= 0
+                swap = array[i]
+                array[i] = array[i+1]
+                array[i+1] = swap
+            end
+            i += 1
+        end
+        j += 1
+    end
+    print array
+end
 
+bubble_sort([4,3,78,2,0,2])
+
+puts ""
+
+bubble_sort_by(["hi","hello","hey"]) do |left,right|
+    left.length - right.length
 end
