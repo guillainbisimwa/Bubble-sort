@@ -21,7 +21,9 @@ def bubble_sort_by(array)
     i = 0
     while i < array.length - (j + 1)
       if yield(array[i], array[i + 1]).to_i >= 0
-        array[i], array[i + 1] = array[i + 1], array[i]
+        swap = array[i]
+        array[i] =array[i + 1]
+        array[i + 1] =  swap
       end
       i += 1
     end
