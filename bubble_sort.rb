@@ -22,8 +22,8 @@ def bubble_sort_by(array)
     while i < array.length - (j + 1)
       if yield(array[i], array[i + 1]).to_i >= 0
         swap = array[i]
-        array[i] =array[i + 1]
-        array[i + 1] =  swap
+        array[i] = array[i + 1]
+        array[i + 1] = swap
       end
       i += 1
     end
@@ -36,6 +36,6 @@ bubble_sort([4, 3, 78, 2, 0, 2])
 
 puts "\n"
 
-bubble_sort_by(['hi', 'hello', 'hey']) do |left, right|
+bubble_sort_by(%w[hi hello hey]) do |left, right|
   left.length - right.length
 end
