@@ -1,14 +1,6 @@
 # Bubble sort
+
 def bubble_sort(array)
-    return array.sort
-end
-
-array_test = [2,4,1,7,5]
-# print array_test
-# print bubble_sort(array_test)
-
-# Buble sort by
-def bubble_sort_by(array)
     j = 0
     while j < array.length - 1
         i = 0
@@ -25,4 +17,8 @@ def bubble_sort_by(array)
     return array
 end
 
-print bubble_sort_by(array_test)
+
+#Bubble sort by
+def bubble_sort_by(array)
+
+end
