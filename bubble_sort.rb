@@ -12,7 +12,7 @@ def bubble_sort(array)
     end
     j += 1
   end
-  print array
+  array
 end
 
 def bubble_sort_by(array)
@@ -29,13 +29,5 @@ def bubble_sort_by(array)
     end
     j += 1
   end
-  print array
-end
-
-bubble_sort([4, 3, 78, 2, 0, 2])
-
-puts "\n"
-
-bubble_sort_by(%w[hi hello hey]) do |left, right|
-  left.length - right.length
+  array
 end
