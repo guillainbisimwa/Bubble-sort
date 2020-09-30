@@ -8,6 +8,13 @@ We did it in peer-programming.
 ## Built With
 Ruby
 
+## How to run
+1. Open Terminal.
+2. Navigate to your desired location to download the contents of this repository.
+3. Copy and paste the following code into the Terminal: git clone ```https://github.com/guillainbisimwa/Bubble-sort```
+4. Run ```cd Bubble-sort```.
+5. Run ```ruby bubble_sort.rb```
+
 ## Authors
 👤 **Guillain Bisimwa**
 
@@ -15,11 +22,11 @@ Ruby
 - Twitter: [@gullain_bisimwa](https://twitter.com/gullain_bisimwa)
 - Linkedin: [linkedin](https://www.linkedin.com/in/guillain-bisimwa-8a8b7a7b/)
 
-👤 **Sergio Obolevich**
+👤 **A B M Asadullah**
 
 - Github: [@abmasadullah](https://github.com/abmasadullah)
 - Twitter: [@abmasadullah](https://twitter.com/abmasadullah)
-- Linkedin: [abmasadullah](https://www.linkedin.com/in/abmasadullah/)
+- Linkedin: [@abmasadullah](https://www.linkedin.com/in/abmasadullah/)
 
 ## 🤝 Contributing
 Contributions, issues and feature requests are welcome!
